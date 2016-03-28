@@ -8,10 +8,13 @@ tests/
 .gitignore
 .sync-config.cson
 .remote-sync.json
-Makefile*
 LICENSE*
+Makefile*
 README*
 
 *.swp
 *.lock
 *.lck
+*.*~
+*~
+.tags

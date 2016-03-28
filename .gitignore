@@ -8,3 +8,5 @@ tests/
 *.swp
 *.lock
 *.lck
+*.*~
+*~
