@@ -1,0 +1,25 @@
+version: "2"
+services:
+
+  keyboximage:
+    container_name: keybox
+    build: build
+    ulimits:
+      nofile:
+        soft: 20000
+        hard: 40000
+      nproc: 65535
+    ports:
+      - "8443:8443"
+    volumes:
+      - data:/nodered_data
+    networks:
+      - front
+
+volumes:
+  data:
+    driver: local
+
+networks:
+  front:
+    driver: bridge
